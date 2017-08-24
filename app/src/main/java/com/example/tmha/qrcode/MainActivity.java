@@ -61,4 +61,8 @@ public class MainActivity extends AppCompatActivity {
             super.onActivityResult(requestCode, resultCode, data);
         }
     }
+
+    public void onClick(View view) {
+        startActivity(new Intent(MainActivity.this, ScanQRActivity.class));
+    }
 }
